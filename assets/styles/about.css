@@ -1,0 +1,132 @@
+@import './main.css';
+
+/* about.css */
+/* ========== HAVILAH Herbal Center – About Page Styles ========== */
+
+.about-page {
+    padding: 60px 8%;
+    background-color: #fafaf9;
+    color: #222;
+    line-height: 1.8;
+}
+
+/* Hero Section */
+.about-hero {
+    text-align: center;
+    padding: 80px 0 60px;
+    background: linear-gradient(to bottom right, #c8e6c9, #f1f8e9);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: #4e4e4e;
+    font-style: italic;
+}
+
+/* About Details Section */
+.about-details {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-content {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-content:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.about-content h2 {
+    color: #388e3c;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Values Section */
+.about-values {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.about-values h2 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.value-card {
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.value-card h3 {
+    font-size: 1.3rem;
+    color: #43a047;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-page {
+        padding: 40px 6%;
+    }
+
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        padding: 25px 20px;
+    }
+
+    .values-grid {
+        gap: 20px;
+    }
+}

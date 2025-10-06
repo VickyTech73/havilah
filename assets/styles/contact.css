@@ -1,0 +1,137 @@
+@import './main.css';
+
+/* === CONTACT PAGE SPECIFIC === */
+.contact-section {
+    background: var(--main-white);
+    padding: 40px 5%;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-intro h2 {
+    font-size: 2rem;
+    color: var(--dark-green);
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    min-width: 300px;
+    background: var(--pure-white);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h3,
+.contact-info h3 {
+    color: var(--dark-green);
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--main-dark);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #ccc !important;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: var(--pure-white);
+    color: var(--main-dark);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--main-green);
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.2);
+    outline: none;
+}
+
+/* Submit Button */
+button.cta-button {
+    width: 220px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.3s;
+    background: var(--main-white);
+    color: var(--dark-green);
+    font-weight: 600;
+    border: 3px solid var(--dark-green);
+}
+
+button.cta-button:hover {
+    background: var(--dark-green);
+    color: var(--pure-white);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Map */
+.map-section {
+    text-align: center;
+}
+
+.map-section h3 {
+    color: var(--dark-green);
+    margin-bottom: 20px;
+}
+
+/* Header text */
+.header-text {
+    color: var(--pure-white);
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .header-text h1 {
+        font-size: 2rem;
+    }
+
+    .contact-intro h2 {
+        font-size: 1.6rem;
+    }
+}
